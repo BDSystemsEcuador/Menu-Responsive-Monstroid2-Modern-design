@@ -149,7 +149,7 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding:80px 0 80px 0px;
+    padding:0;
 }
 .banner-content{
     font-family: "Hind-SemiBold";
@@ -189,6 +189,80 @@ body{
     align-items: center;
     color: white;
     font-weight: 800;
+    transition: all .5s;
+}
+.banner__link:hover{
+    box-shadow: 0px 0px 7px rgba(121, 39, 189, 0.274);
+    font-size: 1.1em;
+    color: rgb(44, 44, 44);
+}
+/*Sections*/
+.caracteristicas{
+    margin-top: 50px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+.col{
+    width: 100%;
+}
+.col__subtitle{
+    display: block;
+    color: var(--color2);
+    font-family: "Hind-Light";
+    margin-bottom: 10px;
+}
+.col__title{
+    color: var(--color2); 
+    font-family: "Hind-SemiBold";
+    margin-bottom: 20px;
+}
+.col__txt{
+    font-size: .9em;
+    font-family: "Hind-Light";
+    color: var(--color2); 
+}
+.col__link{
+    display: block;
+    text-decoration: none;
+    font-size: .9em;
+    color: white;
+    background: var(--color4);
+    padding: 10px;
+    margin: 30px 0 0 0;
+    width: max-content;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgb(95, 28, 107);
+}
+
+.img1, .img2{
+    background-image: url(https://ld-wp73.template-help.com/monstroid2/skins/default/wp-content/uploads/2018/07/home-1-icon-1.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+.img2{
+    background-image: url(https://ld-wp73.template-help.com/monstroid2/skins/default/wp-content/uploads/2018/07/home-1-icon-2.svg);
+}
+.col--center{
+    text-align: center;
+}
+.row2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+.col2{
+    width: 100%;
 }
 @media screen and (min-width:768px){
     .menu{width: auto;
@@ -196,7 +270,6 @@ body{
     padding: 0;
     background-color: rgba(255, 255, 255, 0);
 
-    
     }
     .btn-menu{
         display: none;
@@ -235,5 +308,11 @@ body{
     }
     .header__icons{
         width: 45%;
+    }
+    .col{
+        width: 33.33%;
+    }
+    .col2{
+        width: 50%;
     }
 }
